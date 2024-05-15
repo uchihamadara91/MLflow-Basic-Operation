@@ -55,18 +55,18 @@ pipenv install awscli
 
 pipenv install boto3
 
-pipenv install shell
+pipenv shell
 
 ## Then set aws credentials
 aws configure
 
 # Finally
-mlflow server -h 0.0.0.0 --default-artifact-root s3://mlflow-test-23
+mlflow server -h 0.0.0.0 --default-artifact-root s3://mlflow-buc18
 
 #open Public IPv4 DNS to the port 5000
 
 #set uri in your local terminal and in your code
 
-export MLFLOW_TRACKING_URI=
+export MLFLOW_TRACKING_URI=http://ec2-13-50-239-22.eu-north-1.compute.amazonaws.com:5000/
 
 ```
